@@ -1,5 +1,3 @@
-"use client";
-
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect } from "react";
 import { auth } from "../../../firebase";
@@ -9,23 +7,20 @@ import YourAppointmentsPage from "@/pages/YourAppointmentsPage";
 import LoginPage from "@/pages/LoginPage";
 
 const AuthYourAppointmentPageHandler = () => {
+  const { isAuth } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
 
-    const {isAuth} = useSelector((state)=> state.auth);
-    const dispatch = useDispatch();
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        dispatch(authset(true));
+      } else {
+        dispatch(authset(false));
+      }
+    });
+  }, [dispatch]);
 
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                dispatch(authset(true));
-            } else {
-                dispatch(authset(false));
-            }
-        });
-    }, [dispatch]);
+  return <div>{isAuth ? <YourAppointmentsPage /> : <LoginPage />}</div>;
+};
 
-    return ( 
-        <div>{isAuth ? <YourAppointmentsPage /> : <LoginPage />}</div>
-     );
-}
- 
 export default AuthYourAppointmentPageHandler;
