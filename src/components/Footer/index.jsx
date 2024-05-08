@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.png";
 import twitter from "../../assets/images/096-twitter.png";
 import linkedin from "../../assets/images/052-linkedin.png";
 import fb from "../../assets/images/023-facebook.png";
+import { Link } from "react-router-dom";
 
 const exploreItem = [
   {
@@ -48,14 +49,14 @@ const Footer = () => {
       <section className="mb-[13px]">
         <div className="flex justify-between">
           <div className="flex flex-col items-start">
-            <a className="mb-[29.65px]" href="/">
+            <Link className="mb-[29.65px]" to="/">
               <div className="flex gap-2 justify-center items-center">
                 <img className="w-[42.35px] h-[42.35px]" src={logo} alt="logo" />
                 <h1 className="text-[20px] font-medium">
                   Mafaza<span className="text-[#24BEE0]">.</span>
                 </h1>
               </div>
-            </a>
+            </Link>
             <div className="max-w-[296px] mb-[5px]">
               <p className="text-[18px] text-[#062126] opacity-60 font-medium">Masjid Al-Jami, Selatan, Gg. Hidayah, RT.34/RW.08, Warungboto, Kec. Umbulharjo, Kota Yogyakarta, DIY 55164</p>
             </div>
@@ -78,27 +79,27 @@ const Footer = () => {
             <h2 className="text-[24px] font-semibold mb-[36px]">Explore</h2>
             {exploreItem.map((item, i) => (
               <div className="gap-y-[20px] mb-[5px]" key={i}>
-                <a href={item.link}>
+                <Link to={item.link}>
                   <p className="text-[#062126] opacity-60 font-medium text-[18px]">{item.label}</p>
-                </a>
+                </Link>
               </div>
             ))}
           </div>
           <div className="flex flex-col items-start">
             <h2 className="text-[24px] font-semibold mb-[36px]">Legal</h2>
             {legalItem.map((item, i) => (
-              <a key={i} href={item.link} className="mb-[5px]">
+              <Link key={i} to={item.link} className="mb-[5px]">
                 <p className="text-[#062126] opacity-60 font-medium text-[18px]">{item.label}</p>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="flex flex-col items-start">
             <div className="flex flex-col justify-start h-full">
               <h2 className="text-[24px] font-semibold mb-[36px]">Subscribe</h2>
               <p className="text-[#062126] opacity-60 font-medium text-[18px] mb-[20px]">Subscribe to get the latest news from us</p>
-              <a href="/">
+              <Link to="/">
                 <Button className="w-[103px] h-[43px] hover:bg-[#0F97B5]">Subscribe</Button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

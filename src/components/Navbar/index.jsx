@@ -6,6 +6,7 @@ import { auth } from "../../../firebase";
 import { LogOut, User } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import userIcon from "../../assets/images/iconImage/userDropDown.png";
+import { Link } from "react-router-dom";
 
 const navbarItem = [
   {
@@ -45,29 +46,29 @@ const Navbar = () => {
     <header>
       <nav className="container my-[22.82px] flex justify-between">
         <div className="flex items-start">
-          <a href="/">
+          <Link to="/">
             <div className="flex gap-2 justify-center items-center">
               <img className="w-[42.35px] h-[42.35px]" src={logo} alt="logo" />
               <h1 className="text-[20px] font-medium">
                 Mafaza<span className="text-[#24BEE0]">.</span>
               </h1>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="flex gap-[20px] items-center justify-center">
           {navbarItem.map((item, i) => (
             <div key={i} className="hover:bg-[#24BEE0] hover:bg-opacity-5 rounded-[40px] p-3">
-              <a href={item?.link}>
+              <Link to={item?.link}>
                 <p className="text-[#062126] opacity-60 font-medium text-[16px] active:text-[#CF7D4E] ">{item.label}</p>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
         <div>
           {!isAuth ? (
-            <a href="/login">
+            <Link to="/login">
               <Button className="w-[80px] h-[43px] hover:bg-[#0F97B5]">Login</Button>
-            </a>
+            </Link>
           ) : (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -78,12 +79,12 @@ const Navbar = () => {
               <DropdownMenuContent className="w-56 rounded-[10px] p-5">
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <a href="/your-appointments">
+                <Link to="/your-appointments">
                   <DropdownMenuItem>
                     <User className="mr-2 h-4 w-4" />
                     <span>Profile</span>
                   </DropdownMenuItem>
-                </a>
+                </Link>
                 <DropdownMenuItem onClick={handleSignOut}>
                   <LogOut className="mr-2 h-4 w-4" />
                   <span>Log out</span>
