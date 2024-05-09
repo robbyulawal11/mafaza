@@ -5,9 +5,10 @@ import { Label } from "@/components/ui/label";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { auth } from "../../../firebase";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const [user, userSet] = useState(false);
   const [userAccount, userAccountSet] = useState({
     email: "",
     password: "",
@@ -19,7 +20,7 @@ const LoginPage = () => {
     try {
       e.preventDefault();
       await signInWithEmailAndPassword(auth, userAccount.email, userAccount.password);
-      window.location.reload();
+      userSet(true);
     } catch (err) {
       const errorMessage = err.message;
       const errorCode = err.code;
@@ -52,6 +53,7 @@ const LoginPage = () => {
 
   return (
     <div className="container flex justify-center mt-[30px] mb-[123px]">
+      {user && <Navigate to="/" replace={true} />}
       <Card className="w-[500px] h-[600px]">
         <CardHeader className="text-center">
           <CardTitle className="font-bold text-[36px]">Login to Your Account</CardTitle>

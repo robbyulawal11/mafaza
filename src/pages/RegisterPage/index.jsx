@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../../firebase";
 import { useState } from "react";
 
 const RegisterPage = () => {
+  const [user, userSet] = useState(false);
   const [userAccount, userAccountSet] = useState({
     email: "",
     password: "",
@@ -21,7 +22,7 @@ const RegisterPage = () => {
     try {
       // create a new user with email and password
       await createUserWithEmailAndPassword(auth, userAccount.email, userAccount.password);
-      window.location.reload();
+      userSet(true);
     } catch (err) {
       const errorMessage = err.message;
       const errorCode = err.code;
@@ -50,6 +51,7 @@ const RegisterPage = () => {
 
   return (
     <div className="container flex justify-center mt-[30px] mb-[123px]">
+      {user && <Navigate to="/" replace={true} />}
       <Card className="w-[500px] h-[700px]">
         <CardHeader className="text-center">
           <CardTitle className="font-medium text-[36px]">Register Your Account</CardTitle>

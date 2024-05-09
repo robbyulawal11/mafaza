@@ -10,6 +10,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Textarea } from "../ui/textarea";
 import send from "../../assets/images/iconImage/Send.svg";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const FormSchema = z.object({
   name: z
@@ -54,6 +55,7 @@ const FormSchema = z.object({
 
 export function InputForm() {
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const onHandleSend = (userAppointment) => {
     axios
@@ -68,7 +70,7 @@ export function InputForm() {
           description: "Donee pokoknyaaaaaaaaaa",
         });
         console.log("Response:", response.data);
-        window.location.reload();
+        navigate(0);
       })
       .catch((error) => {
         console.error("Error:", error);

@@ -13,8 +13,10 @@ import { useFetch } from "@/lib/useFetch";
 import axios from "axios";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { Textarea } from "@/components/ui/textarea";
+import { useNavigate } from "react-router-dom";
 
 const YourAppointmentsPage = () => {
+  const navigate = useNavigate();
   const { fetcher, data } = useFetch();
   const { fetcherById, dataById } = useFetchById();
   const [userAppointmentEdited, userAppointmentEditedSet] = useState({
@@ -38,9 +40,8 @@ const YourAppointmentsPage = () => {
     axios
       .delete(`${import.meta.env.VITE_ENDPOINT}/appointment/${id}`)
       .then((response) => {
-        alert("Success Delete!");
         console.log("Response berhasil delete:", response.data);
-        window.location.reload();
+        navigate(0);
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -57,7 +58,7 @@ const YourAppointmentsPage = () => {
       .put(`${import.meta.env.VITE_ENDPOINT}/appointment/${id}`, userAppointmentEdited)
       .then((response) => {
         console.log("Data berhasil diperbarui:", response.data);
-        window.location.reload();
+        navigate(0);
       })
       .catch((error) => {
         console.error("Gagal memperbarui data:", error);
