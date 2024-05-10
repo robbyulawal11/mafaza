@@ -15,6 +15,8 @@ import { auth } from "../firebase";
 import { useDispatch } from "react-redux";
 import { authset } from "./lib/store/slice/auth.slice";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopButton from "./components/ScrollToTop/ScrollToTopButton";
 
 function App() {
   const dispatch = useDispatch();
@@ -32,6 +34,8 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Navbar />
+      <ScrollToTop />
+      <ScrollToTopButton />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/therapists" element={<TherapistsPage />} />
