@@ -18,7 +18,7 @@ const navbarItem = [
     link: "/our-services",
   },
   {
-    label: "Your Appointments",
+    label: "Appointments",
     link: "/your-appointments",
   },
   {
