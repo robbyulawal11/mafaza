@@ -64,8 +64,14 @@ const YourAppointmentsPage = () => {
 
   const handleEdit = (id) => {
     fetcherById(`appointment/${id}`);
-    userAppointmentEditedSet(dataById);
+    
   };
+
+  useEffect(()=>{
+    if(dataById){
+      userAppointmentEditedSet(dataById)
+    }
+  },[dataById])
 
   const confirmEdit = (id) => {
     axios
