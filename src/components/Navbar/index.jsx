@@ -6,7 +6,7 @@ import { auth } from "../../../firebase";
 import { LogOut, User } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import userIcon from "../../assets/images/iconImage/userDropDown.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const navbarItem = [
   {
@@ -58,9 +58,9 @@ const Navbar = () => {
         <div className="flex gap-[20px] items-center justify-center">
           {navbarItem.map((item, i) => (
             <div key={i} className="hover:bg-[#24BEE0] hover:bg-opacity-5 rounded-[40px] p-3">
-              <Link to={item?.link}>
-                <p className="text-[#062126] opacity-60 font-medium text-[16px] active:text-[#CF7D4E] ">{item.label}</p>
-              </Link>
+              <NavLink to={item?.link} className={({ isActive }) => (isActive ? "text-[#CF7D4E] font-medium text-[16px]" : "text-[#062126] opacity-60 font-medium text-[16px]")}>
+                {item.label}
+              </NavLink>
             </div>
           ))}
         </div>
