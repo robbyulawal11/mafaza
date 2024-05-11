@@ -7,6 +7,7 @@ import { LogOut, User } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import userIcon from "../../assets/images/iconImage/userDropDown.png";
 import { Link, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const navbarItem = [
   {
@@ -32,11 +33,14 @@ const navbarItem = [
 ];
 
 const Navbar = () => {
+  const user = auth.currentUser;
   const { isAuth } = useSelector((state) => state.auth);
+  const navigate = useNavigate();
 
   async function handleSignOut() {
     try {
       await signOut(auth);
+      navigate("/")
     } catch (error) {
       console.log(error);
     }
@@ -77,9 +81,9 @@ const Navbar = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 rounded-[10px] p-5">
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuLabel>{user?.displayName}</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <Link to="/your-appointments">
+                <Link to="/profile">
                   <DropdownMenuItem>
                     <User className="mr-2 h-4 w-4" />
                     <span>Profile</span>
