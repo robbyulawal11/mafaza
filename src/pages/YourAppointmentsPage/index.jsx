@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useFetchById } from "@/lib/useFetchById";
-import user1 from "../../assets/images/usersImage/user13.png";
+import user1 from "../../assets/images/iconImage/user.png";
 import userIcon from "../../assets/images/iconImage/userIcon.png";
 import pinIcon from "../../assets/images/iconImage/pinIcon.png";
 import { useEffect, useState } from "react";
@@ -12,9 +12,12 @@ import { useFetch } from "@/lib/useFetch";
 import axios from "axios";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { Textarea } from "@/components/ui/textarea";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../../../firebase";
 
 const YourAppointmentsPage = () => {
+  const user = auth.currentUser;
+  console.log(user)
   const navigate = useNavigate();
   const { fetcher, data } = useFetch();
   const { fetcherById, dataById } = useFetchById();
@@ -36,14 +39,6 @@ const YourAppointmentsPage = () => {
   };
 
   const tabAppointmentClass = (tab) => (activeTabAppointment === tab ? "text-[#E5661E] font-medium text-[20px]" : "text-[#062126] opacity-60 font-medium text-[20px]");
-
-  const [activeTabMenu, setActiveTabMenu] = useState("tab2");
-
-  const handleTabMenuClick = (tab) => {
-    setActiveTabMenu(tab);
-  };
-
-  const tabMenuClass = (tab) => (activeTabMenu === tab ? "bg-white" : "bg-transparent");
 
   useEffect(() => {
     fetcher(`/appointment`);
@@ -94,27 +89,21 @@ const YourAppointmentsPage = () => {
       </section>
       <section className="bg-white">
         <div className="flex">
-          <div className="bg-[#E5661E] bg-opacity-5 w-[400px] h-auto flex flex-col justify-start items-center py-[70px] px-[20px]">
+          <div className="bg-[#E5661E] bg-opacity-5 w-[380px] h-auto flex flex-col justify-start items-center py-[70px] px-[20px]">
             <img className="w-[150px] h-[150px] mb-[12px]" src={user1} alt="user 1" />
-            <h5 className="text-[#062126] font-semibold text-[26px] mb-[28px]">User</h5>
+            <h5 className="text-[#062126] font-semibold text-[26px] mb-[28px]">{user.displayName}</h5>
             <hr className="border border-[#062126] border-opacity-30 border-1 w-[300px] mb-[28px]" />
             <div className="flex flex-col items-start gap-[10px]">
-              <div className={`${tabMenuClass("tab1")} flex items-center gap-3 hover:bg-white w-[300px] px-5 py-2  rounded-[10px] cursor-pointer`} onClick={() => handleTabMenuClick("tab1")}>
+              <Link to="/profile" className=" flex items-center gap-3 hover:bg-white w-[300px] px-5 py-2  rounded-[10px] cursor-pointer">
                 <img className="w-[20px] h-[20px]" src={userIcon} alt="user icon" />
-                <p className="text-[#062126] opacity-60 font-medium text-[20px]">Profil</p>
-              </div>
-              <div className={`${tabMenuClass("tab2")} flex items-center gap-3 hover:bg-white w-[300px] px-5 py-2 rounded-[10px] cursor-pointer`} onClick={() => handleTabMenuClick("tab2")}>
+                <p className="text-[#062126] opacity-60 font-medium text-[20px]">Profile</p>
+              </Link>
+              <div className=" flex items-center gap-3 bg-white w-[300px] px-5 py-2 rounded-[10px] cursor-pointer">
                 <img className="w-[20px] h-[20px]" src={pinIcon} alt="pin icon" />
                 <p className="text-[#062126] opacity-60 font-medium text-[20px]">Appointment</p>
               </div>
             </div>
           </div>
-          {activeTabMenu === "tab1" && (
-            <div className="m-[48px]">
-              <p className="text-[16px] text-[#062126] opacity-60 font-medium ">Coming Soon</p>
-            </div>
-          )}
-          {activeTabMenu === "tab2" && (
             <div className="m-[48px]">
               <h2 className="text-[#062126] font-bold text-[32px] mb-[28px]">Appointment</h2>
               <div className="flex gap-[28px] text-[#062126] opacity-60 font-medium text-[20px] mb-[10px]">
@@ -340,7 +329,6 @@ const YourAppointmentsPage = () => {
                 </div>
               )}
             </div>
-          )}
         </div>
       </section>
     </div>

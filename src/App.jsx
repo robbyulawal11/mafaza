@@ -18,6 +18,7 @@ import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopButton from "./components/ScrollToTop/ScrollToTopButton";
 import TestimonyPage from "./pages/TestimonialsPage";
+import AuthProfilePageHandler from "./lib/middleware/AuthProfilePageHandler";
 
 function App() {
   const dispatch = useDispatch();
@@ -47,6 +48,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/profile" element={<AuthProfilePageHandler />} />
       </Routes>
       <Footer />
     </div>
