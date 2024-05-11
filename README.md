@@ -1,5 +1,3 @@
-<p align="center"><a href="https://robiul-awal-mini-project-mafaza.vercel.app/" target="_blank"><img src="https://drive.google.com/file/d/1tQz_3mNaUCAnZDASP5jrRMJMLLF_G7QY/view?usp=drive_link" width="400" alt="Mafaza Logo"></a></p>
-
 # Mafaza
 
 ## About Project
@@ -34,17 +32,17 @@ After the visit, users can provide reviews and ratings of the service they recei
   
 ## Tech Stacks
 List of tools and frameworks used in list form like this:
-❖	UI Library: React.js (Vite)
-❖	CSS Library: Tailwind CSS
-❖	Tailwind Library: Shadcn UI, Embla Carousel
-❖	Form Library: React Hook Form
-❖	Validasi Form: Zod
-❖	Fetching: Axios
-❖	Global State Management: Redux
-❖	Routing: React Router DOM
-❖	BackEnd: axios, Firebase, Mock API
-❖	AI: Gemini/Google Generative AI
-❖	Clean Code : Eslint
+- UI Library: React.js (Vite)
+- CSS Library: Tailwind CSS
+- Tailwind Library: Shadcn UI, Embla Carousel
+- Form Library: React Hook Form
+- Validasi Form: Zod
+- Fetching: Axios
+- Global State Management: Redux
+- Routing: React Router DOM
+- BackEnd: axios, Firebase, Mock API
+- AI: Gemini/Google Generative AI
+- Clean Code : Eslint
 
 
 ## Live App Demo
