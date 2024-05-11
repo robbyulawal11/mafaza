@@ -17,6 +17,7 @@ import { authset } from "./lib/store/slice/auth.slice";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopButton from "./components/ScrollToTop/ScrollToTopButton";
+import TestimonyPage from "./pages/TestimonialsPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ function App() {
       <ScrollToTopButton />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/testimony" element={<TestimonyPage />} />
         <Route path="/therapists" element={<TherapistsPage />} />
         <Route path="/our-services" element={<OurServicesPage />} />
         <Route path="/your-appointments" element={<AuthYourAppointmentPageHandler />} />
