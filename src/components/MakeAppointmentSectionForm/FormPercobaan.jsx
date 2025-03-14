@@ -89,7 +89,7 @@ export function InputForm() {
     <section className="bg-white pt-[70px] pb-[140px]">
       <div className="container">
         <div className="flex justify-center">
-          <h2 className="text-[#062126] font-bold text-[48px] mb-[52px]">Make Appointment</h2>
+          <h2 className="text-[#062126] font-bold text-[48px] mb-[52px]">Buat Reservasi</h2>
         </div>
         <div>
           <Form {...form}>
@@ -101,7 +101,7 @@ export function InputForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input className="w-[372px] h-[50px] bg-white rounded-[10px]" placeholder="Name" {...field} />
+                        <Input className="w-[372px] h-[50px] bg-white rounded-[10px]" placeholder="Nama" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -115,12 +115,12 @@ export function InputForm() {
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="w-[372px] h-[50px] bg-white rounded-[10px]">
-                            <SelectValue placeholder="Gender" />
+                            <SelectValue placeholder="Jenis Kelamin" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Male">Male</SelectItem>
-                          <SelectItem value="Female">Female</SelectItem>
+                          <SelectItem value="Male">Laki-laki</SelectItem>
+                          <SelectItem value="Female">Prempuan</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -137,14 +137,14 @@ export function InputForm() {
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="w-[372px] h-[50px] bg-white rounded-[10px]">
-                            <SelectValue placeholder="Service" />
+                            <SelectValue placeholder="Layanan" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Sport Massage">Sport Massage</SelectItem>
-                          <SelectItem value="Sport Injury">Sport Injury</SelectItem>
+                          <SelectItem value="Sport Massage">Terapi Olahraga</SelectItem>
+                          <SelectItem value="Sport Injury">Cedera Olahraga</SelectItem>
                           <SelectItem value="Bekam">Bekam</SelectItem>
-                          <SelectItem value="Excercise Therapy">Excercise Therapy</SelectItem>
+                          <SelectItem value="Excercise Therapy">Latihan Terapi</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -159,7 +159,7 @@ export function InputForm() {
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="w-[372px] h-[50px] bg-white rounded-[10px]">
-                            <SelectValue placeholder="Therapist" />
+                            <SelectValue placeholder="Terapis" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -191,7 +191,7 @@ export function InputForm() {
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger className="w-[372px] h-[50px] bg-white rounded-[10px]">
-                            <SelectValue placeholder="Location" />
+                            <SelectValue placeholder="Lokasi" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -209,7 +209,7 @@ export function InputForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input className="w-[372px] h-[50px] bg-white rounded-[10px]" type="number" pattern="[0-9]{12}" placeholder="Phone" {...field} />
+                        <Input className="w-[372px] h-[50px] bg-white rounded-[10px]" type="number" pattern="[0-9]{12}" placeholder="Nomor Telepon" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -249,7 +249,7 @@ export function InputForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Textarea placeholder="Tell us a little bit about your complaint" className="resize-none w-[776px] h-[150px] bg-white rounded-[10px]" {...field} />
+                        <Textarea placeholder="Ceritakan tentang keluhan dan keinginan Anda" className="resize-none w-[776px] h-[150px] bg-white rounded-[10px]" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -258,7 +258,7 @@ export function InputForm() {
               </div>
               <div className="flex gap-x-[32px] mb-[30px] justify-center">
                 <Button className="w-[156px] h-[67px] hover:bg-[#0F97B5]" type="submit">
-                  Send <img className="ml-[20px]" src={send} alt="send" />
+                  Kirim<img className="ml-[20px]" src={send} alt="send" />
                 </Button>
               </div>
             </form>

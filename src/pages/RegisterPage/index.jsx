@@ -31,16 +31,16 @@ const RegisterPage = () => {
 
       switch (errorCode) {
         case "auth/weak-password":
-          setErrorMessage("The password is too weak.");
+          setErrorMessage("Kata sandi lemah");
           break;
         case "auth/email-already-in-use":
-          setErrorMessage("This email address is already in use by another account.");
+          setErrorMessage("Alamat email ini sudah digunakan oleh akun lain.");
           break;
         case "auth/invalid-email":
-          setErrorMessage("This email address is invalid.");
+          setErrorMessage("Alamat email ini tidak valid.");
           break;
         case "auth/operation-not-allowed":
-          setErrorMessage("Email/password accounts are not enabled.");
+          setErrorMessage("Akun email/kata sandi tidak diaktifkan.");
           break;
         default:
           setErrorMessage(errorMessage);
@@ -54,8 +54,8 @@ const RegisterPage = () => {
       {user && <Navigate to="/" replace={true} />}
       <Card className="w-[500px] h-[700px]">
         <CardHeader className="text-center">
-          <CardTitle className="font-medium text-[36px]">Register Your Account</CardTitle>
-          <CardDescription className="text-[#062126] opacity-40 font-medium text-[16px] px-[50px]">Come on, register your account now.</CardDescription>
+          <CardTitle className="font-medium text-[36px]">Daftar Akun Anda</CardTitle>
+          <CardDescription className="text-[#062126] opacity-40 font-medium text-[16px] px-[50px]">Ayo, daftarkan akun Anda sekarang</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit}>
@@ -74,20 +74,20 @@ const RegisterPage = () => {
               </div>
               <div className="flex flex-col space-y-1.5">
                 <Label className="text-[#062126] opacity-70 font-medium text-[16px]" htmlFor="password">
-                  Password
+                  Kata Sandi
                 </Label>
                 <Input className="w-[400px] bg-white" type="password" id="password" placeholder="" value={userAccount.password} onChange={(e) => userAccountSet((prev) => ({ ...prev, password: e.target.value }))} />
               </div>
               <div className="flex flex-col space-y-1.5">
                 <Label className="text-[#062126] opacity-70 font-medium text-[16px]" htmlFor="passwordConfirm">
-                  Password Confirm
+                  Konfirmasi Kata Sandi
                 </Label>
                 <Input className="w-[400px] bg-white" type="password" id="passwordConfirm" placeholder="" />
               </div>
             </div>
             <div className="flex flex-col justify-center items-center">
               <Button className="w-[400px] text-[20px] font-semibold mb-[18px] hover:bg-[#0F97B5]" type="submit">
-                Register
+                Daftar
               </Button>
               {error && <p className="text-red-500 text-[16px] font-regular">{errorMessage}</p>}
             </div>
@@ -95,11 +95,11 @@ const RegisterPage = () => {
         </CardContent>
         <CardFooter className="flex flex-col w-full">
           <Link to="/login" className="flex justify-end w-[400px] mb-[16px]">
-            <p className="text-[#062126] opacity-70 font-medium text-[16px] cursor-pointer hover:underline decoration-solid">You have an account?</p>
+            <p className="text-[#062126] opacity-70 font-medium text-[16px] cursor-pointer hover:underline decoration-solid">Anda sudah punya akun?</p>
           </Link>
           <Link to={"/login"}>
             <Button className="w-[400px] text-[#24BEE0] border-[#24BEE0] bg-white text-[20px] font-semibold hover:border-[#0F97B5] hover:text-[#0F97B5]" variant="outline">
-              Login
+              Masuk
             </Button>
           </Link>
         </CardFooter>

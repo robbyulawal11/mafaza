@@ -11,32 +11,32 @@ const whyUsItem = [
     {
         icon: icon1,
         title: "Anamnesis",
-        description: "We are proud to announce that we provide high quality anamnesis for your issue."
+        description: "Kami bangga mengumumkan bahwa kami menyediakan anamnesis berkualitas tinggi untuk masalah Anda"
     },
     {
         icon: icon2,
-        title: "Insurance",
-        description: "You can get our insurance to not care of any financial difficulties in future."
+        title: "Asuransi",
+        description: "Anda bisa mendapatkan asuransi kami untuk tidak menanggung kesulitan keuangan apa pun di masa mendatang"
     },
     {
         icon: icon3,
-        title: "Massage Support",
-        description: "We have a huge amount of high quality massage support."
+        title: "Dukungan Terapis Berkualitas",
+        description: "Kami memiliki sejumlah besar dukungan terapis berkualitas tinggi"
     },
     {
         icon: icon4,
-        title: "Verified",
-        description: "The clinic has gone through a verification or review process by a health certification body"
+        title: "Terverifikasi",
+        description: "Klinik telah melalui proses verifikasi atau peninjauan oleh badan sertifikasi kesehatan"
     },
     {
         icon: icon5,
-        title: "24/7 Clean",
-        description: "We care about having a clean and safe rooms for our patients"
+        title: "24/7 Bersih",
+        description: "Kami peduli untuk memiliki kamar yang bersih dan aman bagi pasien kami"
     },
     {
         icon: icon6,
-        title: "Exercise Therapy",
-        description: "Our therapist will help you get personal training routine to get the best results"
+        title: "Latihan Terapi",
+        description: "Terapis kami akan membantu Anda mendapatkan rutinitas pelatihan pribadi untuk mendapatkan hasil terbaik"
     },
 ]
 
@@ -44,7 +44,7 @@ const WhyUsSection = () => {
     return ( 
         <section className="container mb-[157px]">
             <div className="mb-[84px]">
-                <h2 className="text-[#062126] font-bold text-[48px]">Why us?</h2>
+                <h2 className="text-[#062126] font-bold text-[48px]">Mengapa Memilih Kami?</h2>
             </div>
             <div className="grid grid-cols-3 gap-[64px]">
                 {whyUsItem.map((item, i) => (

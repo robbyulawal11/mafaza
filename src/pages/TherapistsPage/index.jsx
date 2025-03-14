@@ -9,7 +9,7 @@ const therapistItem = [
     {
         image: therapist1,
         name: "Jane Nicholson, S.Or",
-        profession: "Leading Masseus",
+        profession: "Praktisi Masseus",
         description: "Meg is a leading dentist in our central hospital. She has made the name in california Silicon Valley when presenting the new technology, today called “anti-cancer”.",
 
         totalPatients: 500,
@@ -18,7 +18,7 @@ const therapistItem = [
     {
         image: therapist2,
         name: "Dr. Alison Pretty, S.Or",
-        profession: "Consultant Sport Injury",
+        profession: "Konsultan Cedera Olahraga",
         description: "Meg is a leading dentist in our central hospital. She has made the name in california Silicon Valley when presenting the new technology, today called “anti-cancer”.",
         totalPatients: 320,
         totalCertficate: 34
@@ -26,7 +26,7 @@ const therapistItem = [
     {
         image: therapist3,
         name: "Rebecca Flows, S.Or",
-        profession: "Leading Masseus",
+        profession: "Praktisi Masseus",
         description: "Meg is a leading dentist in our central hospital. She has made the name in california Silicon Valley when presenting the new technology, today called “anti-cancer”.",
         totalPatients: 900,
         totalCertficate: 34
@@ -34,7 +34,7 @@ const therapistItem = [
     {
         image: therapist4,
         name: "Maria Anderson, S.Or",
-        profession: "Leading Masseus",
+        profession: "Praktisi Masseus",
         description: "Meg is a leading dentist in our central hospital. She has made the name in california Silicon Valley when presenting the new technology, today called “anti-cancer”.",
         totalPatients: 500,
         totalCertficate: 34
@@ -46,7 +46,7 @@ const TherapistsPage = () => {
         <div className="flex-grow">
             <section className='h-[400px] w-auto flex justify-center items-center bg-center mb-[70px]' style={{ backgroundImage:`url(${heroService})` }}>
                 <div className='w-[375px] h-[118px] bg-[#062126] bg-opacity-70 rounded-[30px] flex justify-center items-center'>
-                    <h2 className='text-white font-bold text-[48px]'>Therapists</h2>
+                    <h2 className='text-white font-bold text-[48px]'>Terapis</h2>
                 </div>
             </section>
             <section className='mb-[140px]'>
@@ -57,18 +57,18 @@ const TherapistsPage = () => {
                         <div className='bg-[#E5661E] bg-opacity-5 w-[170px] h-[372px] rounded-[30px] flex flex-col justify-center items-center'>
                             <div className='flex flex-col justify-center items-center mb-[52px]'>
                                 <p className='text-[#CF7D4E] font-semibold text-[24px]'>{item.totalCertficate}</p>
-                                <p className='text-[#062126] opacity-70 font-medium text-[16px]'>Certificates</p>
+                                <p className='text-[#062126] opacity-70 font-medium text-[16px]'>Sertifikat</p>
                             </div>
                             <div className='flex flex-col justify-center items-center'>
                                 <p className='text-[#CF7D4E] font-semibold text-[24px]'>{item.totalPatients}</p>
-                                <p className='text-[#062126] opacity-70 font-medium text-[16px]'>Happy Clients</p>
+                                <p className='text-[#062126] opacity-70 font-medium text-[16px]'>Pasien Bahagia</p>
                             </div>
                         </div>
                         <div className='w-[372px] pt-[34px]'>
                             <h2 className='text-[#062126] font-semibold text-[24px] mb-[12px]'>{item.name}</h2>
                             <h5 className='text-[#CF7D4E] font-medium text-[16px] mb-[20px]'>{item.profession}</h5>
                             <p className='text-[#062126] opacity-70 font-regular text-[16px] mb-[32px]'>{item.description}</p>
-                            <p className='text-[#062126] opacity-50 font-semibold text-[16px] mb-[14px]'>Availability</p>
+                            <p className='text-[#062126] opacity-50 font-semibold text-[16px] mb-[14px]'>Waktu yang Tersedia</p>
                             <p className='text-[#24BEE0] font-medium text-[16px] mb-[12px]'>Mon-Fri    10AM-9PM</p>
                             <p className='text-[#24BEE0] font-medium text-[16px]'>Sat    10AM-2PM</p>
                         </div>

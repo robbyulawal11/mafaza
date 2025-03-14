@@ -17,6 +17,7 @@ import { authset } from "./lib/store/slice/auth.slice";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopButton from "./components/ScrollToTop/ScrollToTopButton";
+import Chatbot from "./components/Chatbot";
 import TestimonyPage from "./pages/TestimonialsPage";
 import AuthProfilePageHandler from "./lib/middleware/AuthProfilePageHandler";
 
@@ -38,6 +39,7 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <ScrollToTopButton />
+      <Chatbot />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/testimony" element={<TestimonyPage />} />

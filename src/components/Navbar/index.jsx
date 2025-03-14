@@ -11,23 +11,23 @@ import { useNavigate } from "react-router-dom";
 
 const navbarItem = [
   {
-    label: "Home",
+    label: "Beranda",
     link: "/",
   },
   {
-    label: "Our Services",
+    label: "Layanan",
     link: "/our-services",
   },
   {
-    label: "Appointments",
+    label: "Reservasi",
     link: "/your-appointments",
   },
   {
-    label: "About Us",
+    label: "Tentang Kami",
     link: "/about-us",
   },
   {
-    label: "Contact Us",
+    label: "Hubungi Kami",
     link: "/contact-us",
   },
 ];
@@ -71,7 +71,7 @@ const Navbar = () => {
         <div>
           {!isAuth ? (
             <Link to="/login">
-              <Button className="w-[80px] h-[43px] hover:bg-[#0F97B5]">Login</Button>
+              <Button className="w-[80px] h-[43px] hover:bg-[#0F97B5]">Masuk</Button>
             </Link>
           ) : (
             <DropdownMenu>
@@ -86,12 +86,12 @@ const Navbar = () => {
                 <Link to="/profile">
                   <DropdownMenuItem>
                     <User className="mr-2 h-4 w-4" />
-                    <span>Profile</span>
+                    <span>Profil</span>
                   </DropdownMenuItem>
                 </Link>
                 <DropdownMenuItem onClick={handleSignOut}>
                   <LogOut className="mr-2 h-4 w-4" />
-                  <span>Log out</span>
+                  <span>Keluar</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

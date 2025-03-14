@@ -36,47 +36,47 @@ const HomePage = () => {
         <div className="flex-grow">
             <section className="container flex justify-between mt-[84px] mb-[135px]">
                 <div className="">
-                    <h1 className="font-extrabold text-7xl mb-[32px] h-[168px]">Feel Comfort <br /> Be Healthly</h1>
-                    <p className="text-[#062126] opacity-70 font-medium text-[16px] mb-[52px]">Our professional team will take care of you, <br />we value your time and health.</p>
+                    <h1 className="font-extrabold text-6xl mb-[16px] h-[168px]">Rasakan Kenyamanan <br /> Raih Kesehatan</h1>
+                    <p className="text-[#062126] opacity-70 font-medium text-[24px] mb-[52px]">Tim profesional kami akan menangani Anda, <br/>kami menghargai waktu dan kesehatan Anda</p>
                     <div className="mb-[52px]">
                         <div className="bg-[#F4F5F4] w-[624px] h-[233px] rounded-[30px] p-[52px] gap-[32px] grid grid-cols-2">
                             <div className="flex">
                                 <img className="w-[30px] h-[30px] mr-[12px]" src={calendar} alt="calendar" />
                                 <div>
-                                    <h5 className="text-[#062126] opacity-80 font-semibold text-[16px]">Make Appointment</h5>
-                                    <p className="text-[#062126] opacity-70 font-medium text-[14px]">Select best time for you.</p>
+                                    <h5 className="text-[#062126] opacity-80 font-semibold text-[16px]">Buat Reservasi</h5>
+                                    <p className="text-[#062126] opacity-70 font-medium text-[14px]">Pilih waktu terbaik untuk Anda</p>
                                 </div>
                             </div>
                             <div className="flex">
                                 <img className="w-[30px] h-[30px] mr-[12px]" src={user} alt="user" />
                                 <div>
-                                    <h5 className="text-[#062126] opacity-80 font-semibold text-[16px]">Find the Best Therapist</h5>
-                                    <p className="text-[#062126] opacity-70 font-medium text-[14px]">Find therapist in a minute.</p>
+                                    <h5 className="text-[#062126] opacity-80 font-semibold text-[16px]">Temukan Terapi Terbaik</h5>
+                                    <p className="text-[#062126] opacity-70 font-medium text-[14px]">Temukan terapi dengan cepat</p>
                                 </div>
                             </div>
                             <div className="flex">
                                 <img className="w-[30px] h-[30px] mr-[12px]" src={location} alt="location" />
                                 <div>
-                                    <h5 className="text-[#062126] opacity-80 font-semibold text-[16px]">Visit the clinic</h5>
-                                    <p className="text-[#062126] opacity-70 font-medium text-[14px]">Take care of your issues.</p>
+                                    <h5 className="text-[#062126] opacity-80 font-semibold text-[16px]">Kunjungi Klinik</h5>
+                                    <p className="text-[#062126] opacity-70 font-medium text-[14px]">Tangani masalah cidera Anda</p>
                                 </div>
                             </div>
                             <div className="flex">
                                 <img className="w-[30px] h-[30px] mr-[12px]" src={message} alt="message" />
                                 <div>
-                                    <h5 className="text-[#062126] opacity-80 font-semibold text-[16px]">Ask Questions</h5>
-                                    <p className="text-[#062126] opacity-70 font-medium text-[14px]">Ask question any time.</p>
+                                    <h5 className="text-[#062126] opacity-80 font-semibold text-[16px]">Ajukan Pertanyaan</h5>
+                                    <p className="text-[#062126] opacity-70 font-medium text-[14px]">Ajukan pertanyaan kapan saja</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="flex gap-x-[52px]">
                         <Link to={'/contact-us'}>
-                            <Button className='h-[67px] w-[297px] text-[20px] font-medium hover:bg-[#0F97B5]'>Make Appointment <img className="ml-2" src={arrow} alt="arrowIcon" /></Button>
+                            <Button className='h-[67px] w-[297px] text-[20px] font-medium hover:bg-[#0F97B5]'>Buat Reservasi <img className="ml-2" src={arrow} alt="arrowIcon" /></Button>
                         </Link>
                         <div className="flex flex-col justify-around">
-                            <p className="text-[#CF7D4E] font-medium text-[16px] mb-[12px]">Mon-Fri    10AM-9PM</p>
-                            <p className="text-[#CF7D4E]  font-medium text-[16px]">Sat    10AM-2PM</p>
+                            <p className="text-[#CF7D4E] font-medium text-[16px] mb-[12px]">Senin - Jumat 10.00 - 21.00</p>
+                            <p className="text-[#CF7D4E]  font-medium text-[16px]">Sabtu - Minggu 10.00 - 14.00</p>
                         </div>
                     </div>
                 </div>

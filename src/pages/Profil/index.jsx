@@ -47,7 +47,7 @@ const ProfilPage = () => {
         <div>
             <section className="h-[400px] w-auto flex justify-center items-center bg-center" style={{ backgroundImage: `url(${heroService})` }}>
                 <div className="w-[480px] h-[118px] bg-[#062126] bg-opacity-70 rounded-[30px] flex justify-center items-center">
-                <h2 className="text-white font-bold text-[48px]">Profile</h2>
+                <h2 className="text-white font-bold text-[48px]">Profil</h2>
                 </div>
             </section>
             <section className="bg-white">
@@ -59,23 +59,23 @@ const ProfilPage = () => {
                     <div className="flex flex-col items-start gap-[10px]">
                     <Link to="/profil" className=" flex items-center gap-3 bg-white w-[300px] px-5 py-2  rounded-[10px] cursor-pointer">
                         <img className="w-[20px] h-[20px]" src={userIcon} alt="user icon" />
-                        <p className="text-[#062126] opacity-60 font-medium text-[20px]">Profile</p>
+                        <p className="text-[#062126] opacity-60 font-medium text-[20px]">Profil</p>
                     </Link>
                     <Link to="/your-appointments" className=" flex items-center gap-3 hover:bg-white w-[300px] px-5 py-2 rounded-[10px] cursor-pointer">
                         <img className="w-[20px] h-[20px]" src={pinIcon} alt="pin icon" />
-                        <p className="text-[#062126] opacity-60 font-medium text-[20px]">Appointment</p>
+                        <p className="text-[#062126] opacity-60 font-medium text-[20px]">Reservasi</p>
                     </Link>
                     </div>
                 </div>
                 <div className="m-[48px]">
                     <Card className='lg:w-[900px] h-[500px] shadow-sm p-14'>
-                        <h1 className="text-[#062126] font-semibold text-[20px] mb-[30px]">Profile Details</h1>
+                        <h1 className="text-[#062126] font-semibold text-[20px] mb-[30px]">Detail Profil</h1>
                         {user && 
                         <form onSubmit={onHandleSave}>
                         <div className="grid w-full items-center justify-start gap-4 mb-[100px]">
                         <div className="flex flex-col space-y-1.5">
                             <Label className="text-[#062126] opacity-70 font-medium text-[16px]" htmlFor="name">
-                            Name
+                            Nama
                             </Label>
                             <Input className="w-[800px] bg-white text-[#062126] opacity-80 font-medium text-[16px]" type="text" id="name" placeholder="" value={newProfil?.displayName} onChange={(e) => newProfilSet((prev) => ({ ...prev, displayName: e.target.value }))}/>
                         </div>
@@ -88,7 +88,7 @@ const ProfilPage = () => {
                         </div>
                         <div className="flex justify-end items-center">
                         <Button className="w-[100px] text-[16px] font-medium mb-[20px] hover:bg-[#0F97B5]" type="submit">
-                            Change
+                            Simpan
                         </Button>
                         </div>
                     </form>

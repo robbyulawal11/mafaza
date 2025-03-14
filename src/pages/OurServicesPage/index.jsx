@@ -19,23 +19,23 @@ import MakeAppointmentSectionForm from '@/components/MakeAppointmentSectionForm'
 const serviceItem =[
     {
         image: service1,
-        title: "Sport Massage",
-        description: "Sports massage is a type of massage specifically designed to help athletes improve their performance, speed muscle recovery after training or competition, and prevent injury. These massage techniques were developed to target muscles frequently used in sporting activities.",
+        title: "Terapi Olahraga",
+        description: "Pijat olahraga adalah jenis pijat yang dirancang khusus untuk membantu atlet meningkatkan performa mereka, mempercepat pemulihan otot setelah latihan atau kompetisi, dan mencegah cedera. Teknik pijat ini dikembangkan untuk menargetkan otot-otot yang sering digunakan dalam kegiatan olahraga.",
     },
     {
         image: service2,
-        title: "Sport Injury",
-        description: "Sports injury therapy is a rehabilitation approach that aims to accelerate an athlete's recovery and restore physical function through various therapeutic techniques. Specialized therapists in this area focus on evaluating injuries, planning individualized rehabilitation programs, and preventing future injuries.",
+        title: "Cedera Olahraga",
+        description: "Terapi cedera olahraga adalah pendekatan rehabilitasi yang bertujuan untuk mempercepat pemulihan atlet dan memulihkan fungsi fisik melalui berbagai teknik terapi. Terapis spesialis di bidang ini berfokus pada evaluasi cedera, perencanaan program rehabilitasi individual, dan pencegahan cedera di masa mendatang.",
     },
     {
         image: service3,
         title: "Bekam",
-        description: "Cupping is a traditional healing technique that involves placing a special cup on the skin to create a vacuum, which aims to increase blood circulation in the area. This method is often used to relieve pain, reduce inflammation, and as a form of relaxation and overall health restoration.",
+        description: "Bekam adalah teknik penyembuhan tradisional yang melibatkan penempatan cangkir khusus pada kulit untuk menciptakan ruang hampa, yang bertujuan untuk meningkatkan sirkulasi darah di area tersebut. Metode ini sering digunakan untuk menghilangkan rasa sakit, mengurangi peradangan, dan sebagai bentuk relaksasi serta pemulihan kesehatan secara keseluruhan.",
     },
     {
         image: service4,
-        title: "Excercise Therapy",
-        description: "Exercise therapy is an exercise program specifically designed to help patients recover from injury or to manage chronic conditions. Exercises can include stretching, strength, and cardiovascular activities that are monitored by a therapist to ensure safety and effectiveness in the healing process.",
+        title: "Latihan Terapi",
+        description: "Terapi latihan adalah program latihan yang dirancang khusus untuk membantu pasien pulih dari cedera atau mengelola kondisi kronis. Latihan dapat mencakup peregangan, kekuatan, dan aktivitas kardiovaskular yang dipantau oleh terapis untuk memastikan keamanan dan efektivitas dalam proses penyembuhan.",
     },
 ]
 
@@ -44,7 +44,7 @@ const OurServicesPage = () => {
         <div className="flex-grow">
             <section className='h-[400px] w-auto flex justify-center items-center bg-center' style={{ backgroundImage:`url(${heroService})` }}>
                 <div className='w-[375px] h-[118px] bg-[#062126] bg-opacity-70 rounded-[30px] flex justify-center items-center'>
-                    <h2 className='text-white font-bold text-[48px]'>Our Services</h2>
+                    <h2 className='text-white font-bold text-[48px]'>Layanan Kami</h2>
                 </div>
             </section>
             <section className='container pt-[70px] mb-[68px]'>
@@ -62,7 +62,7 @@ const OurServicesPage = () => {
                                         <div>
                                             <img className='w-[30px] h-[30px]' src={calendarWhite} alt="calendarwhiteIcon" />
                                         </div>
-                                        <CardTitle className='text-white'>Available Times</CardTitle>
+                                        <CardTitle className='text-white'>Waktu yang Tersedia</CardTitle>
                                     </CardHeader>
                                 <CardContent className='p-[32px] flex justify-between'>
                                     <div className='flex gap-[12px]'>
@@ -71,8 +71,8 @@ const OurServicesPage = () => {
                                             <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Masjid Al-Jami, Warungboto, DIY</h5>
                                             <div className='grid grid-cols-2'>
                                                 <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
-                                                    <p>Mon-Fri</p>
-                                                    <p>Weekends</p>
+                                                    <p>Senin - Jumat</p>
+                                                    <p>Akhir Pekan</p>
                                                 </div>
                                                 <div className='text-[#062126] opacity-80 font-medium text-[14px]'>
                                                     <p>11.00 - 20.00</p>
@@ -87,8 +87,8 @@ const OurServicesPage = () => {
                                             <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Jl. Veteran No. 93, Warungboto, DIY</h5>
                                             <div className='grid grid-cols-2'>
                                                 <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
-                                                    <p>Mon-Fri</p>
-                                                    <p>Weekends</p>
+                                                    <p>Senin - Jumat</p>
+                                                    <p>Akhir Pekan</p>
                                                 </div>
                                                 <div className='text-[#062126] opacity-80 font-medium text-[14px]'>
                                                     <p>11.00 - 20.00</p>

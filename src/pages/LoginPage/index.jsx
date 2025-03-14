@@ -56,8 +56,8 @@ const LoginPage = () => {
       {user && <Navigate to="/" replace={true} />}
       <Card className="w-[500px] h-[600px]">
         <CardHeader className="text-center">
-          <CardTitle className="font-bold text-[36px]">Login to Your Account</CardTitle>
-          <CardDescription className="text-[#062126] opacity-40 font-medium text-[16px] px-[50px]">Come on, continue your appointment and change it according to your wishes.</CardDescription>
+          <CardTitle className="font-bold text-[36px]">Masuk ke Akun Anda</CardTitle>
+          <CardDescription className="text-[#062126] opacity-40 font-medium text-[16px] px-[50px]">Ayo, lanjutkan janji Anda dan ubah sesuai keinginan Anda.</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={onHandleLogin} className="flex flex-col items-center">
@@ -70,27 +70,27 @@ const LoginPage = () => {
               </div>
               <div className="flex flex-col space-y-1.5">
                 <Label className="text-[#062126] opacity-70 font-medium text-[16px]" htmlFor="password">
-                  Password
+                  Kata Sandi
                 </Label>
                 <Input className="w-[400px] bg-white" type="password" id="password" placeholder="" value={userAccount.password} onChange={(e) => userAccountSet((prev) => ({ ...prev, password: e.target.value }))} />
               </div>
             </div>
             <div className="flex justify-end w-[400px] mb-[16px]">
-              <a className="text-[#062126] opacity-70 font-medium text-[16px] cursor-pointer hover:underline decoration-solid">Forget password?</a>
+              <a className="text-[#062126] opacity-70 font-medium text-[16px] cursor-pointer hover:underline decoration-solid">Lupa kata sandi?</a>
             </div>
             <Button className="w-[400px] text-[20px] font-semibold mb-[18px] hover:bg-[#0F97B5]" type="submit">
-              Login
+              Masuk
             </Button>
             {error && <p className="text-red-500 text-[16px] font-regular">{errorMessage}</p>}
           </form>
         </CardContent>
         <CardFooter className="flex flex-col w-full">
           <Link to="/register" className="flex justify-end w-[400px] mb-[16px]">
-            <p className="text-[#062126] opacity-70 font-medium text-[16px] cursor-pointer hover:underline decoration-solid">Dont have an account?</p>
+            <p className="text-[#062126] opacity-70 font-medium text-[16px] cursor-pointer hover:underline decoration-solid">Tidak punya akun?</p>
           </Link>
           <Link to={"/register"}>
             <Button className="w-[400px] text-[#24BEE0] border-[#24BEE0] bg-white text-[20px] font-semibold hover:border-[#0F97B5] hover:text-[#0F97B5]" variant="outline">
-              Register
+              Daftar
             </Button>
           </Link>
         </CardFooter>

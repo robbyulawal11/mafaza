@@ -46,7 +46,7 @@ export function TestimonialSection() {
         className="w-full container mb-[100px]"
       >
         <div className="mb-[84px]">
-          <h2 className="text-[#062126] font-bold text-[48px]">Testimonials</h2>
+          <h2 className="text-[#062126] font-bold text-[48px]">Testimoni</h2>
         </div>
         <div>
           <CarouselContent className="-ml-1">
@@ -73,7 +73,7 @@ export function TestimonialSection() {
       </Carousel>
       <Link className="flex gap-x-[32px] mb-[30px] justify-center items-center" to="/testimony">
         <Button className="h-[67px] w-[297px] text-[20px] font-medium hover:bg-[#0F97B5]">
-          Give Testimony <img className="ml-2" src={arrow} alt="arrowIcon" />
+          Berikan Testimoni <img className="ml-2" src={arrow} alt="arrowIcon" />
         </Button>
       </Link>
     </section>

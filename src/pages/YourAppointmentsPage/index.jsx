@@ -84,7 +84,7 @@ const YourAppointmentsPage = () => {
     <div className="flex-grow">
       <section className="h-[400px] w-auto flex justify-center items-center bg-center" style={{ backgroundImage: `url(${heroService})` }}>
         <div className="w-[480px] h-[118px] bg-[#062126] bg-opacity-70 rounded-[30px] flex justify-center items-center">
-          <h2 className="text-white font-bold text-[48px]">Appointments</h2>
+          <h2 className="text-white font-bold text-[48px]">Reservasi</h2>
         </div>
       </section>
       <section className="bg-white">
@@ -96,25 +96,25 @@ const YourAppointmentsPage = () => {
             <div className="flex flex-col items-start gap-[10px]">
               <Link to="/profile" className=" flex items-center gap-3 hover:bg-white w-[300px] px-5 py-2  rounded-[10px] cursor-pointer">
                 <img className="w-[20px] h-[20px]" src={userIcon} alt="user icon" />
-                <p className="text-[#062126] opacity-60 font-medium text-[20px]">Profile</p>
+                <p className="text-[#062126] opacity-60 font-medium text-[20px]">Profil</p>
               </Link>
               <div className=" flex items-center gap-3 bg-white w-[300px] px-5 py-2 rounded-[10px] cursor-pointer">
                 <img className="w-[20px] h-[20px]" src={pinIcon} alt="pin icon" />
-                <p className="text-[#062126] opacity-60 font-medium text-[20px]">Appointment</p>
+                <p className="text-[#062126] opacity-60 font-medium text-[20px]">Reservasi</p>
               </div>
             </div>
           </div>
             <div className="m-[48px]">
-              <h2 className="text-[#062126] font-bold text-[32px] mb-[28px]">Appointment</h2>
+              <h2 className="text-[#062126] font-bold text-[32px] mb-[28px]">Reservasi</h2>
               <div className="flex gap-[28px] text-[#062126] opacity-60 font-medium text-[20px] mb-[10px]">
                 <p className={`${tabAppointmentClass("tab1")} hover:text-[#E5661E] cursor-pointer`} onClick={() => handleTabAppointmentClick("tab1")}>
-                  All Appointment
+                  Semua Reservasi
                 </p>
                 <p className={`${tabAppointmentClass("tab2")} hover:text-[#E5661E] cursor-pointer`} onClick={() => handleTabAppointmentClick("tab2")}>
-                  Appointments In Progress
+                  Reservasi Sedang Ditangani
                 </p>
                 <p className={`${tabAppointmentClass("tab3")} hover:text-[#E5661E] cursor-pointer`} onClick={() => handleTabAppointmentClick("tab3")}>
-                  Completed Appointment
+                  Reservasi Selesai
                 </p>
               </div>
               <hr className="border border-[#062126] border-opacity-30 border-1 w-[800px] mb-[28px]" />
@@ -126,7 +126,7 @@ const YourAppointmentsPage = () => {
                         <div key={value.id} className="bg-[#24BEE0] bg-opacity-10 w-[800px] h-auto rounded-[10px] mb-[32px]">
                           <div className="bg-[#24BEE0] rounded-t-[10px] h-[63px] flex items-center justify-between p-[30px]">
                             <div className="flex items-center gap-[34px]">
-                              <p className="text-white mr-[12px]">Created At : {value.createdAt}</p>
+                              <p className="text-white mr-[12px]">Dibuat pada : {value.createdAt}</p>
                               <hr className="border border-white border-1 rotate-90 w-[30px]" />
                               <p className="text-white">No Id : {value.id}</p>
                             </div>
@@ -141,11 +141,11 @@ const YourAppointmentsPage = () => {
                                   {value.name} / {value.gender}
                                 </h5>
                                 <div className="mt-[5px] flex mb-[10px]">
-                                  <h6 className="text-[#062126] font-regular text-[16px] mb-[5px] mr-[10px]">Phone</h6>
+                                  <h6 className="text-[#062126] font-regular text-[16px] mb-[5px] mr-[10px]">Nomor Telepon</h6>
                                   <p className="text-[#062126] opacity-60 font-regular text-[16px]">{value.phone}</p>
                                 </div>
                                 <div>
-                                  <h6 className="text-[#062126] font-regular text-[16px] mb-[5px]">Date - Time Appointment</h6>
+                                  <h6 className="text-[#062126] font-regular text-[16px] mb-[5px]">Tanggal - Waktu Reservasi</h6>
                                   <p className="text-[#062126] opacity-60 font-regular text-[16px] mb-[10px]">
                                     {value.date} - {value.time}
                                   </p>
@@ -154,21 +154,21 @@ const YourAppointmentsPage = () => {
                               <hr className="mt-[50px] border border-[#062126] border-opacity-70 border-1 rotate-90 w-[140px]" />
                               <div className="flex flex-col">
                                 <div>
-                                  <h6 className="text-[#062126] font-regular text-[16px] mb-[5px]">Location</h6>
+                                  <h6 className="text-[#062126] font-regular text-[16px] mb-[5px]">Lokasi</h6>
                                   <p className="text-[#062126] opacity-60 font-regular text-[16px] mb-[10px]">{value.location}</p>
                                 </div>
                                 <div>
-                                  <h6 className="text-[#062126] font-regular text-[16px] mb-[5px]">Therapist</h6>
+                                  <h6 className="text-[#062126] font-regular text-[16px] mb-[5px]">Terapis</h6>
                                   <p className="text-[#062126] opacity-60 font-regular text-[16px] mb-[10px]">{value.therapist}</p>
                                 </div>
                               </div>
                             </div>
                             <div className="mt-[20px]">
-                              <h6 className="text-[#062126] font-regular text-[16px] mb-[5px]">Complaints of pain</h6>
+                              <h6 className="text-[#062126] font-regular text-[16px] mb-[5px]">Keluhan Penyakit</h6>
                               <p className="text-[#062126] opacity-60 font-regular text-[16px] mb-[10px]">{value.complaint}</p>
                             </div>
                             <div className="mt-[10px] flex">
-                              <h6 className="text-[#062126] font-regular text-[16px] mb-[5px] mr-[10px]">Price</h6>
+                              <h6 className="text-[#062126] font-regular text-[16px] mb-[5px] mr-[10px]">Harga</h6>
                               <p className="text-[#062126] opacity-60 font-regular text-[16px] mb-[10px]">Rp120.000</p>
                             </div>
                             <div className="flex justify-end gap-[12px]">
@@ -180,39 +180,39 @@ const YourAppointmentsPage = () => {
                                 </DialogTrigger>
                                 <DialogContent className="sm:max-w-[425px] lg:max-w-[700px]">
                                   <DialogHeader>
-                                    <DialogTitle>Edit profile</DialogTitle>
-                                    <DialogDescription>Make changes to your appointment here. Click save when you are done.</DialogDescription>
+                                    <DialogTitle>Edit profil</DialogTitle>
+                                    <DialogDescription>Lakukan perubahan pada janji temu Anda di sini. Klik simpan setelah selesai.</DialogDescription>
                                   </DialogHeader>
                                   <div className="grid gap-4 py-4">
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="name" className="text-right">
-                                        Name
+                                        Nama
                                       </Label>
                                       <Input id="name" defaultValue={dataById.name} className="col-span-3" value={userAppointmentEdited.name} onChange={(e) => userAppointmentEditedSet((prev) => ({ ...prev, name: e.target.value }))} />
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="name" className="text-right">
-                                        Gender
+                                        Jenis Kelamin
                                       </Label>
                                       <select name="gender" id="gender" value={userAppointmentEdited.gender} onChange={(e) => userAppointmentEditedSet((prev) => ({ ...prev, gender: e.target.value }))}>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
+                                        <option value="Male">Perempuan</option>
+                                        <option value="Female">Laki-laki</option>
                                       </select>
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="name" className="text-right">
-                                        Service
+                                        Layanan
                                       </Label>
                                       <select name="service" id="service" value={userAppointmentEdited.service} onChange={(e) => userAppointmentEditedSet((prev) => ({ ...prev, service: e.target.value }))}>
-                                        <option value="Sport Massage">Sport Massage</option>
-                                        <option value="Sport Injury">Sport Injury</option>
+                                        <option value="Sport Massage">Terapi Olahraga</option>
+                                        <option value="Sport Injury">Cedera Olahraga</option>
                                         <option value="Bekam">Bekam</option>
-                                        <option value="Excercise Therapy">Excercise Therapy</option>
+                                        <option value="Excercise Therapy">Latihan Terapi</option>
                                       </select>
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="name" className="text-right">
-                                        Therapist
+                                        Terapis
                                       </Label>
                                       <select name="therapist" id="therapist" value={userAppointmentEdited.therapist} onChange={(e) => userAppointmentEditedSet((prev) => ({ ...prev, therapist: e.target.value }))}>
                                         <optgroup label="Masseur">
@@ -229,7 +229,7 @@ const YourAppointmentsPage = () => {
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="name" className="text-right">
-                                        Location
+                                        Lokasi
                                       </Label>
                                       <select name="location" id="location" value={userAppointmentEdited.location} onChange={(e) => userAppointmentEditedSet((prev) => ({ ...prev, location: e.target.value }))}>
                                         <option value="Masjid Al-Jami">Masjid Al-Jami</option>
@@ -238,7 +238,7 @@ const YourAppointmentsPage = () => {
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="phone" className="text-right">
-                                        Phone
+                                        Nomor Telepon
                                       </Label>
                                       <Input
                                         type="number"
@@ -251,7 +251,7 @@ const YourAppointmentsPage = () => {
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="date" className="text-right">
-                                        Date
+                                        Tanggal
                                       </Label>
                                       <Input
                                         type="date"
@@ -264,7 +264,7 @@ const YourAppointmentsPage = () => {
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="time" className="text-right">
-                                        Time
+                                        Waktu
                                       </Label>
                                       <Input
                                         type="time"
@@ -277,7 +277,7 @@ const YourAppointmentsPage = () => {
                                     </div>
                                     <div className="grid grid-cols-4 items-center gap-4">
                                       <Label htmlFor="complaint" className="text-right">
-                                        Complaint
+                                        Keluhan
                                       </Label>
                                       <Textarea
                                         id="complaint"
@@ -290,24 +290,24 @@ const YourAppointmentsPage = () => {
                                   </div>
                                   <DialogFooter>
                                     <Button type="submit" onClick={() => confirmEdit(value.id)}>
-                                      Save changes
+                                      Simpan Perubahan
                                     </Button>
                                   </DialogFooter>
                                 </DialogContent>
                               </Dialog>
                               <AlertDialog>
                                 <AlertDialogTrigger asChild>
-                                  <Button className="rounded-[10px] bg-red-500 hover:bg-red-700">Cancel</Button>
+                                  <Button className="rounded-[10px] bg-red-500 hover:bg-red-700">Batal</Button>
                                 </AlertDialogTrigger>
                                 <AlertDialogContent>
                                   <AlertDialogHeader>
-                                    <AlertDialogTitle>Confirm to cancel the appointment</AlertDialogTitle>
-                                    <AlertDialogDescription>Are you absolutely sure to cancel the appointment with id {value.id}?</AlertDialogDescription>
+                                    <AlertDialogTitle>Konfirmasi untuk membatalkan reservasi</AlertDialogTitle>
+                                    <AlertDialogDescription>Apakah Anda benar-benar yakin untuk membatalkan janji temu dengan id {value.id}?</AlertDialogDescription>
                                   </AlertDialogHeader>
                                   <AlertDialogFooter>
-                                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                                    <AlertDialogCancel>Batal</AlertDialogCancel>
                                     <AlertDialogAction className="hover:bg-[#0F97B5]" onClick={() => removeItem(value.id)}>
-                                      Continue
+                                      Lanjutkan
                                     </AlertDialogAction>
                                   </AlertDialogFooter>
                                 </AlertDialogContent>
@@ -320,12 +320,12 @@ const YourAppointmentsPage = () => {
               )}
               {activeTabAppointment === "tab2" && (
                 <div>
-                  <p className="text-[16px] text-[#062126] opacity-60 font-medium ">No Found Appointment In Progress</p>
+                  <p className="text-[16px] text-[#062126] opacity-60 font-medium ">Tidak ditemukan reservasi yang sedang ditangani</p>
                 </div>
               )}
               {activeTabAppointment === "tab3" && (
                 <div>
-                  <p className="text-[16px] text-[#062126] opacity-60 font-medium ">No Found Completed Appointment</p>
+                  <p className="text-[16px] text-[#062126] opacity-60 font-medium ">Tidak ditemukan reservasi yang sudah selesai</p>
                 </div>
               )}
             </div>

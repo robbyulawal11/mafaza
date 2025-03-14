@@ -15,11 +15,11 @@ import Autoplay from 'embla-carousel-autoplay'
 const servicesItem = [
     {
         image: service1,
-        label: "Sport Massage"
+        label: "Terapi Olahraga"
     },
     {
         image: service2,
-        label: "Sport Injury"
+        label: "Cidera Olahraga"
     },
     {
         image: service3,
@@ -27,7 +27,7 @@ const servicesItem = [
     },
     {
         image: service4,
-        label: "Exercise Therapy"
+        label: "Latihan Terapi"
     },
 ]
 
@@ -47,7 +47,7 @@ export function CarouselServices() {
         className="w-full"
         >
             <div className="mb-[84px]">
-                <h2 className="text-[#062126] font-bold text-[48px]">Our Services</h2>
+                <h2 className="text-[#062126] font-bold text-[48px]">Layanan Kami</h2>
             </div>
             <div>
                 <CarouselContent>

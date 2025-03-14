@@ -18,6 +18,8 @@ import { useState } from "react";
 import { db } from "../../../firebase";
 import { addDoc, collection } from "firebase/firestore";
 
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
 const FormSchemaTestimony = z.object({
   name: z
     .string({
@@ -48,6 +50,9 @@ const TestimonyPage = () => {
   const navigate = useNavigate();
   const [rating, setRating] = useState(0);
 
+  const genAI = new GoogleGenerativeAI("AIzaSyBwkdh57r4ZFaMwWBVttv9j_horqDy2h_A");
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+
   const onHandleSend = async (data) => {
     try {
       const docRef = await addDoc(collection(db, "testimony"), data);
@@ -62,8 +67,19 @@ const TestimonyPage = () => {
     resolver: zodResolver(FormSchemaTestimony),
   });
 
-  function onSubmit(data) {
-    onHandleSend(data);
+  async function onSubmit(data) {
+    const result = await model.generateContent(
+      `You'll be given a tweet, and your job is to classify its sentiment as positive, neutral, or negative and respond with just one word without space or another character.
+      ${data.testimony}`
+    );
+    const response = result.response;
+    const label = response.text();
+    const newData = {
+      ...data, 
+      sentiment: label,
+      createdAt: new Date().toISOString(),
+    };
+    onHandleSend(newData);
   }
 
   return (

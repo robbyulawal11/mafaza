@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 
 const exploreItem = [
   {
-    label: "Service",
+    label: "Layanan",
     link: "/our-services",
   },
   {
-    label: "About Us",
+    label: "Tentang Kami",
     link: "/about-us",
   },
   {
@@ -19,7 +19,7 @@ const exploreItem = [
     link: "/contact-us",
   },
   {
-    label: "Contact",
+    label: "Kontak",
     link: "/contact-us",
   },
 ];
@@ -34,11 +34,11 @@ const legalItem = [
     link: "/",
   },
   {
-    label: "Documentations",
+    label: "Dokumentasi",
     link: "/",
   },
   {
-    label: "Help Center",
+    label: "Pusat Bantuan",
     link: "/contact-us",
   },
 ];
@@ -96,7 +96,7 @@ const Footer = () => {
           <div className="flex flex-col items-start">
             <div className="flex flex-col justify-start h-full">
               <h2 className="text-[24px] font-semibold mb-[36px]">Subscribe</h2>
-              <p className="text-[#062126] opacity-60 font-medium text-[18px] mb-[20px]">Subscribe to get the latest news from us</p>
+              <p className="text-[#062126] opacity-60 font-medium text-[18px] mb-[20px]">Subscribe untuk mendapatkan berita terbaru dari kami</p>
               <Link to="/">
                 <Button className="w-[103px] h-[43px] hover:bg-[#0F97B5]">Subscribe</Button>
               </Link>
