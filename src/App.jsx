@@ -37,9 +37,6 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Navbar />
-      <ScrollToTop />
-      <ScrollToTopButton />
-      <Chatbot />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/testimony" element={<TestimonyPage />} />
@@ -53,6 +50,9 @@ function App() {
         <Route path="/profile" element={<AuthProfilePageHandler />} />
       </Routes>
       <Footer />
+      <ScrollToTop />
+      <ScrollToTopButton />
+      <Chatbot />
     </div>
   );
 }

@@ -13,39 +13,39 @@ import { Link } from "react-router-dom";
 const whyUsItem = [
     {
         icon: icon1,
-        name: "Jane Nicholson, S.Or",
-        description: "Praktisi Masseus",
+        name: "Hariza Dwi A.P., S.Or.",
+        description: "Praktisi Masseur",
         totalPatients: 500
     },
     {
         icon: icon2,
-        name: "Dr. Alison Pretty, S.Or",
-        description: "Konsultan Cedera Olahraga",
+        name: "Alam Cahaya P., S.Or.",
+        description: "Praktisi Masseur",
         totalPatients: 320
     },
     {
         icon: icon3,
-        name: "Rebecca Flows, S.Or",
-        description: "Praktisi Masseus",
+        name: "M. Farhan Haqiqi, S.Or.",
+        description: "Praktisi Masseur",
         totalPatients: 900
     },
     {
         icon: icon4,
-        name: "Maria Anderson, S.Or",
+        name: "Risqi Kartika R., S.Or.",
         description: "Praktisi Masseus",
         totalPatients: 500
     },
     {
         icon: icon5,
-        name: "Dr. Derek Mendes, S.Or",
-        description: "Konsultan Cedera Olahraga",
-        totalPatients: 320
+        name: "Evi Noor Khasanah, M.Or.",
+        description: "Konsultan dan Praktisi Masseus",
+        totalPatients: 950
     },
     {
         icon: icon6,
-        name: "Bob Singer, S.Or",
-        description: "Praktisi Masseur",
-        totalPatients: 500
+        name: "Eko Budianto, S.Or.",
+        description: "Konsultan dan Praktisi Masseur",
+        totalPatients: 1500
     },
 ]
 

@@ -8,36 +8,35 @@ import therapist4 from '../../assets/images/therapistImage/therapist13.png';
 const therapistItem = [
     {
         image: therapist1,
-        name: "Jane Nicholson, S.Or",
-        profession: "Praktisi Masseus",
-        description: "Meg is a leading dentist in our central hospital. She has made the name in california Silicon Valley when presenting the new technology, today called “anti-cancer”.",
-
+        name: "Hariza Dwi A.P., S.Or.",
+        profession: "Praktisi Masseur",
+        description: "",
         totalPatients: 500,
-        totalCertficate: 34
+        totalCertficate: 4
     },
     {
         image: therapist2,
-        name: "Dr. Alison Pretty, S.Or",
+        name: "M. Farhan Haqiqi, S.Or.",
         profession: "Konsultan Cedera Olahraga",
-        description: "Meg is a leading dentist in our central hospital. She has made the name in california Silicon Valley when presenting the new technology, today called “anti-cancer”.",
-        totalPatients: 320,
-        totalCertficate: 34
+        description: "",
+        totalPatients: 900,
+        totalCertficate: 5
     },
     {
         image: therapist3,
-        name: "Rebecca Flows, S.Or",
+        name: "Risqi Kartika R., S.Or.",
         profession: "Praktisi Masseus",
-        description: "Meg is a leading dentist in our central hospital. She has made the name in california Silicon Valley when presenting the new technology, today called “anti-cancer”.",
-        totalPatients: 900,
-        totalCertficate: 34
+        description: "",
+        totalPatients: 500,
+        totalCertficate: 5
     },
     {
         image: therapist4,
-        name: "Maria Anderson, S.Or",
-        profession: "Praktisi Masseus",
-        description: "Meg is a leading dentist in our central hospital. She has made the name in california Silicon Valley when presenting the new technology, today called “anti-cancer”.",
-        totalPatients: 500,
-        totalCertficate: 34
+        name: "Evi Noor Khasanah, M.Or.",
+        profession: "Konsultan dan Praktisi Masseur",
+        description: "",
+        totalPatients: 9500,
+        totalCertficate: 7
     },
 ]
 

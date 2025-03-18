@@ -61,7 +61,7 @@ const Footer = () => {
               <p className="text-[18px] text-[#062126] opacity-60 font-medium">Masjid Al-Jami, Selatan, Gg. Hidayah, RT.34/RW.08, Warungboto, Kec. Umbulharjo, Kota Yogyakarta, DIY 55164</p>
             </div>
             <div className="mb-[5px]">
-              <p className="text-[18px] text-[#062126] font-medium">Call: (321) 428 321 3902</p>
+              <p className="text-[18px] text-[#062126] font-medium">Call: +62 878-4358-2677</p>
             </div>
             <div className="flex justify-start items-center gap-x-[19px]">
               <div className="bg-[#062126] rounded-full bg-opacity-10 w-[50px] h-[50px] cursor-pointer flex items-center justify-center">
