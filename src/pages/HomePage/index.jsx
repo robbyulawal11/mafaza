@@ -36,7 +36,7 @@ const HomePage = () => {
         <div className="flex-grow">
             <section className="container flex justify-between mt-[84px] mb-[135px]">
                 <div className="">
-                    <h1 className="font-extrabold text-6xl mb-[16px] h-[168px]">Rasakan Kenyamanan <br /> Raih Kesehatan</h1>
+                    <h1 className="font-extrabold text-5xl mb-[16px] h-[168px]">Bengkel Therapy Massage<br/>Pijat Cedera Olahraga</h1>
                     <p className="text-[#062126] opacity-70 font-medium text-[24px] mb-[52px]">Tim profesional kami akan menangani Anda, <br/>kami menghargai waktu dan kesehatan Anda</p>
                     <div className="mb-[52px]">
                         <div className="bg-[#F4F5F4] w-[624px] h-[233px] rounded-[30px] p-[52px] gap-[32px] grid grid-cols-2">
@@ -75,8 +75,8 @@ const HomePage = () => {
                             <Button className='h-[67px] w-[297px] text-[20px] font-medium hover:bg-[#0F97B5]'>Buat Reservasi <img className="ml-2" src={arrow} alt="arrowIcon" /></Button>
                         </Link>
                         <div className="flex flex-col justify-around">
-                            <p className="text-[#CF7D4E] font-medium text-[16px] mb-[12px]">Senin - Jumat 10.00 - 21.00</p>
-                            <p className="text-[#CF7D4E]  font-medium text-[16px]">Sabtu - Minggu 10.00 - 14.00</p>
+                            <p className="text-[#CF7D4E] font-medium text-[16px] mb-[12px]">Senin - Sabtu 09.00 - 21.00</p>
+                            <p className="text-[#CF7D4E]  font-medium text-[16px]">Minggu 09.00 - 16.30</p>
                         </div>
                     </div>
                 </div>

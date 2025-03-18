@@ -19,12 +19,12 @@ import MakeAppointmentSectionForm from '@/components/MakeAppointmentSectionForm'
 const serviceItem =[
     {
         image: service1,
-        title: "Terapi Olahraga",
+        title: "Sport Massage",
         description: "Pijat olahraga adalah jenis pijat yang dirancang khusus untuk membantu atlet meningkatkan performa mereka, mempercepat pemulihan otot setelah latihan atau kompetisi, dan mencegah cedera. Teknik pijat ini dikembangkan untuk menargetkan otot-otot yang sering digunakan dalam kegiatan olahraga.",
     },
     {
         image: service2,
-        title: "Cedera Olahraga",
+        title: "Terapi Massage Cedera Olahraga",
         description: "Terapi cedera olahraga adalah pendekatan rehabilitasi yang bertujuan untuk mempercepat pemulihan atlet dan memulihkan fungsi fisik melalui berbagai teknik terapi. Terapis spesialis di bidang ini berfokus pada evaluasi cedera, perencanaan program rehabilitasi individual, dan pencegahan cedera di masa mendatang.",
     },
     {
@@ -34,7 +34,7 @@ const serviceItem =[
     },
     {
         image: service4,
-        title: "Latihan Terapi",
+        title: "Latihan Pasca Cedera",
         description: "Terapi latihan adalah program latihan yang dirancang khusus untuk membantu pasien pulih dari cedera atau mengelola kondisi kronis. Latihan dapat mencakup peregangan, kekuatan, dan aktivitas kardiovaskular yang dipantau oleh terapis untuk memastikan keamanan dan efektivitas dalam proses penyembuhan.",
     },
 ]
@@ -71,12 +71,12 @@ const OurServicesPage = () => {
                                             <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Masjid Al-Jami, Warungboto, DIY</h5>
                                             <div className='grid grid-cols-2'>
                                                 <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
-                                                    <p>Senin - Jumat</p>
-                                                    <p>Akhir Pekan</p>
+                                                    <p>Senin - Sabtu</p>
+                                                    <p>Minggu</p>
                                                 </div>
                                                 <div className='text-[#062126] opacity-80 font-medium text-[14px]'>
-                                                    <p>11.00 - 20.00</p>
-                                                    <p>12.00 - 14.00</p>
+                                                    <p>09.00 - 21.00</p>
+                                                    <p>09.00 - 16.30</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -87,12 +87,12 @@ const OurServicesPage = () => {
                                             <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Jl. Veteran No. 93, Warungboto, DIY</h5>
                                             <div className='grid grid-cols-2'>
                                                 <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
-                                                    <p>Senin - Jumat</p>
-                                                    <p>Akhir Pekan</p>
+                                                    <p>Senin - Sabtu</p>
+                                                    <p>Minggu</p>
                                                 </div>
                                                 <div className='text-[#062126] opacity-80 font-medium text-[14px]'>
-                                                    <p>11.00 - 20.00</p>
-                                                    <p>12.00 - 14.00</p>
+                                                    <p>09.00 - 21.00</p>
+                                                    <p>09.00 - 16.30</p>
                                                 </div>
                                             </div>
                                         </div>

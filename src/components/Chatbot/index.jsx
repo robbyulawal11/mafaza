@@ -98,15 +98,15 @@ const Chatbot = () => {
         </Tooltip>
       </TooltipProvider>
       {isOpen && (
-        <div className="fixed bottom-20 right-3 w-[512px] bg-white shadow-lg rounded-[15px] overflow-hidden z-50">
-          <div className="bg-[#0F97B5] text-white p-3 flex justify-between items-center shadow-md border-b border-[#0D8CA1]">
+        <div className="fixed bottom-20 right-3 w-[512px] bg-white shadow-lg ring-1 ring-[#0F97B5] rounded-[15px] overflow-hidden z-[9999]">
+          <div className="bg-white text-[#0F97B5] p-3 flex justify-between items-center border-b border-white">
             <span className="flex font-semibold text-lg">              
               <img className="w-[30px] h-[30px] mr-3" src={logo} alt="logo" />
               Mafaza AI
             </span>
             <button
               onClick={toggleChat}
-              className="text-white hover:text-gray-300 transition duration-200"
+              className="text-gray-400 hover:text-gray-700 transition duration-200"
             >
               <X size={22} />
             </button>
