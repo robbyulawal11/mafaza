@@ -18,14 +18,14 @@ import MakeAppointmentSectionForm from '@/components/MakeAppointmentSectionForm'
 
 const serviceItem =[
     {
-        image: service1,
+        image: service2,
         title: "Sport Massage",
         description: "Pijat olahraga adalah jenis pijat yang dirancang khusus untuk membantu atlet meningkatkan performa mereka, mempercepat pemulihan otot setelah latihan atau kompetisi, dan mencegah cedera. Teknik pijat ini dikembangkan untuk menargetkan otot-otot yang sering digunakan dalam kegiatan olahraga.",
     },
     {
-        image: service2,
+        image: service1,
         title: "Terapi Massage Cedera Olahraga",
-        description: "Terapi cedera olahraga adalah pendekatan rehabilitasi yang bertujuan untuk mempercepat pemulihan atlet dan memulihkan fungsi fisik melalui berbagai teknik terapi. Terapis spesialis di bidang ini berfokus pada evaluasi cedera, perencanaan program rehabilitasi individual, dan pencegahan cedera di masa mendatang.",
+        description: "Terapi cedera olahraga adalah pendekatan rehabilitasi yang bertujuan untuk mempercepat pemulihan dan memulihkan fungsi fisik melalui berbagai teknik terapi. Terapis spesialis di bidang ini berfokus pada evaluasi cedera, perencanaan program rehabilitasi, dan pencegahan cedera di masa mendatang.",
     },
     {
         image: service3,
@@ -35,7 +35,7 @@ const serviceItem =[
     {
         image: service4,
         title: "Latihan Pasca Cedera",
-        description: "Terapi latihan adalah program latihan yang dirancang khusus untuk membantu pasien pulih dari cedera atau mengelola kondisi kronis. Latihan dapat mencakup peregangan, kekuatan, dan aktivitas kardiovaskular yang dipantau oleh terapis untuk memastikan keamanan dan efektivitas dalam proses penyembuhan.",
+        description: "Latihan Pasca Sedera adalah program latihan yang dirancang khusus untuk membantu pasien pulih dari cedera atau mengelola kondisi kronis. Latihan dapat mencakup peregangan, kekuatan, dan aktivitas kardiovaskular yang dipantau oleh terapis untuk memastikan keamanan dan efektivitas dalam proses penyembuhan.",
     },
 ]
 
@@ -57,18 +57,34 @@ const OurServicesPage = () => {
                                 <p className='text-[#062126] opacity-70 font-regular text-[16px] mb-[55px]'>{item.description}</p>
                             </div>
                             <div>
-                                <Card className='w-[574px] h-[240px] bg-[#12CCF4] bg-opacity-5 border-0'>
+                                <Card className='w-[574px] h-[370px] bg-[#12CCF4] bg-opacity-5 border-0'>
                                     <CardHeader className='bg-[#24BEE0] rounded-t-[30px] flex flex-row gap-x-[12px] h-[70px] py-[20px] px-[32px]'>
                                         <div>
                                             <img className='w-[30px] h-[30px]' src={calendarWhite} alt="calendarwhiteIcon" />
                                         </div>
                                         <CardTitle className='text-white'>Waktu yang Tersedia</CardTitle>
                                     </CardHeader>
-                                <CardContent className='p-[32px] flex justify-between'>
-                                    <div className='flex gap-[12px]'>
+                                <CardContent className='p-[16px]'>
+                                    <div className='flex gap-[12px] mb-[10px]'>
                                         <img className='w-[30px] h-[30px]' src={locationBlue} alt="locationBlue" />
-                                        <div className='flex flex-col w-[192px]'>
-                                            <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Masjid Al-Jami, Warungboto, DIY</h5>
+                                        <div className='flex flex-col w-full'>
+                                            <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Unit 1 - Jl. Veteran 93 Warungboto, Umbulharjo</h5>
+                                            <div className='grid grid-cols-2'>
+                                                <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
+                                                    <p>Senin - Sabtu</p>
+                                                    <p>Minggu</p>
+                                                </div>
+                                                <div className='text-[#062126] opacity-80 font-medium text-[14px]'>
+                                                    <p>09.00 - 21.00</p>
+                                                    <p>09.00 - 16.30</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='flex gap-[12px] mb-[10px]'>
+                                        <img className='w-[30px] h-[30px]' src={locationBlue} alt="locationBlue" />
+                                        <div className='flex flex-col w-full'>
+                                            <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Unit 2 - Selatan Masjid Al Jami RT 34 RW 08 Warungboto, Umbulharjo</h5>
                                             <div className='grid grid-cols-2'>
                                                 <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
                                                     <p>Senin - Sabtu</p>
@@ -83,8 +99,8 @@ const OurServicesPage = () => {
                                     </div>
                                     <div className='flex gap-[12px]'>
                                         <img className='w-[30px] h-[30px]' src={locationBlue} alt="locationBlue" />
-                                        <div className='flex flex-col w-[192px]'>
-                                            <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Jl. Veteran No. 93, Warungboto, DIY</h5>
+                                        <div className='flex flex-col w-full'>
+                                            <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Unit 3 - Utara MAsjid Al Jami RT 34 RW 08 Warungboto, Umbulharjo</h5>
                                             <div className='grid grid-cols-2'>
                                                 <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
                                                     <p>Senin - Sabtu</p>

@@ -43,13 +43,13 @@ const StatisticMafazaSection = () => {
         </div>
         <hr className="border-[#FFFFFF] border-1 w-[198px] rotate-90" />
         <div className="flex flex-col justify-center items-center">
-          <p className="text-white font-extrabold text-[64px]">300+</p>
-          <p className="text-[#12CCF4] font-medium text-[24px] text-center">Pasien  Bahagia Setiap Minggu</p>
+          <p className="text-white font-extrabold text-[64px]">210+</p>
+          <p className="text-[#12CCF4] font-medium text-[24px] text-center">Pasien  Bahagia Setiap Bulan</p>
         </div>
         <hr className="border-[#FFFFFF] border-1 w-[198px] rotate-90" />
         <div className="flex flex-col justify-center items-center">
-          <p className="text-white font-extrabold text-[64px]">43</p>
-          <p className="text-[#12CCF4] font-medium text-[24px] text-center">Terapi Profesional</p>
+          <p className="text-white font-extrabold text-[64px]">32</p>
+          <p className="text-[#12CCF4] font-medium text-[24px] text-center">Terapis Profesional</p>
         </div>
       </div>
     </section>

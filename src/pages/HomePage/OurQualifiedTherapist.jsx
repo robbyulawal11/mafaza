@@ -12,16 +12,28 @@ import { Link } from "react-router-dom";
 
 const whyUsItem = [
     {
+        icon: icon6,
+        name: "Eko Budianto, S.Or.",
+        description: "Konsultan dan Praktisi Masseur",
+        totalPatients: 2545
+    },
+    {
+        icon: icon5,
+        name: "Evi Noor Khasanah, M.Or.",
+        description: "Konsultan dan Praktisi Masseus",
+        totalPatients: 1050
+    },
+    {
         icon: icon1,
         name: "Hariza Dwi A.P., S.Or.",
         description: "Praktisi Masseur",
-        totalPatients: 500
+        totalPatients: 940
     },
     {
         icon: icon2,
         name: "Alam Cahaya P., S.Or.",
         description: "Praktisi Masseur",
-        totalPatients: 320
+        totalPatients: 920
     },
     {
         icon: icon3,
@@ -31,21 +43,9 @@ const whyUsItem = [
     },
     {
         icon: icon4,
-        name: "Risqi Kartika R., S.Or.",
+        name: "Rizqi Kartika R., S.Or.",
         description: "Praktisi Masseus",
         totalPatients: 500
-    },
-    {
-        icon: icon5,
-        name: "Evi Noor Khasanah, M.Or.",
-        description: "Konsultan dan Praktisi Masseus",
-        totalPatients: 950
-    },
-    {
-        icon: icon6,
-        name: "Eko Budianto, S.Or.",
-        description: "Konsultan dan Praktisi Masseur",
-        totalPatients: 1500
     },
 ]
 

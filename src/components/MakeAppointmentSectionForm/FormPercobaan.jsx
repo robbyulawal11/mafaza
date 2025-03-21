@@ -141,10 +141,10 @@ export function InputForm() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Sport Massage">Terapi Olahraga</SelectItem>
-                          <SelectItem value="Sport Injury">Cedera Olahraga</SelectItem>
+                          <SelectItem value="Sport Massage">Terapi Massage Cedera Olahraga</SelectItem>
+                          <SelectItem value="Sport Injury">Sport Massage</SelectItem>
                           <SelectItem value="Bekam">Bekam</SelectItem>
-                          <SelectItem value="Excercise Therapy">Latihan Terapi</SelectItem>
+                          <SelectItem value="Excercise Therapy">Latihan Pasca Cedera</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -165,15 +165,15 @@ export function InputForm() {
                         <SelectContent>
                           <SelectGroup>
                             <SelectLabel>Masseur</SelectLabel>
-                            <SelectItem value="Dr. Derek Mendes, S.Or">Dr. Derek Mendes, S.Or</SelectItem>
-                            <SelectItem value="Bob Singer, S.Or">Bob Singer, S.Or</SelectItem>
+                            <SelectItem value="Eko Budianto, S.Or.">Eko Budianto, S.Or.</SelectItem>
+                            <SelectItem value="Hariza Dwi A.P., S.Or.">Hariza Dwi A.P., S.Or.</SelectItem>
+                            <SelectItem value="Alam Cahaya P., S.Or.">Alam Cahaya P., S.Or.</SelectItem>
+                            <SelectItem value="M. Farhan Haqiqi, S.Or.">M. Farhan Haqiqi, S.Or.</SelectItem>
                           </SelectGroup>
                           <SelectGroup>
                             <SelectLabel>Masseus</SelectLabel>
-                            <SelectItem value="Jane Nicholson, S.Or">Jane Nicholson, S.Or</SelectItem>
-                            <SelectItem value="Dr. Alison Pretty, S.Or">Dr. Alison Pretty, S.Or</SelectItem>
-                            <SelectItem value="Rebecca Flows, S.Or">Rebecca Flows, S.Or</SelectItem>
-                            <SelectItem value="Maria Anderson, S.Or">Maria Anderson, S.Or</SelectItem>
+                            <SelectItem value="Evi Noor Khasanah, M.Or.">Evi Noor Khasanah, M.Or.</SelectItem>
+                            <SelectItem value="Rizqi Kartika R., S.Or.">Rizqi Kartika R., S.Or.</SelectItem>
                           </SelectGroup>
                         </SelectContent>
                       </Select>
@@ -195,8 +195,9 @@ export function InputForm() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Masjid Al-Jami">Masjid Al-Jami</SelectItem>
-                          <SelectItem value="Jl. Veteran No. 93">Jl. Veteran No. 93</SelectItem>
+                          <SelectItem value="Unit 1 - Jl. Veteran 93 Warungboto, Umbulharjo">Unit 1 - Jl. Veteran 93 Warungboto, Umbulharjo</SelectItem>
+                          <SelectItem value="Unit 2 - Selatan Masjid Al Jami' RT 34 RW 08 Warumgboto, Umbulharjo">Unit 2 - Selatan Masjid Al Jami RT 34 RW 08 Warungboto, Umbulharjo</SelectItem>
+                          <SelectItem value="Unit 3 - Utara MAsjid Al Jami' RT 34 RW 08 Warungboto, Umbulharjo">Unit 3 - Utara MAsjid Al Jami RT 34 RW 08 Warungboto, Umbulharjo</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -223,7 +224,7 @@ export function InputForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input className="w-[372px] h-[50px] bg-white rounded-[10px]" type="date" {...field} />
+                        <Input className="w-[372px] h-[50px] bg-white rounded-[10px]" type="date" placeholder="Tanggal Janji Temu" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -235,7 +236,7 @@ export function InputForm() {
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input className="w-[372px] h-[50px] bg-white rounded-[10px]" type="time" {...field} />
+                        <Input className="w-[372px] h-[50px] bg-white rounded-[10px]" type="time" placeholder="Waktu Janji Temu" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

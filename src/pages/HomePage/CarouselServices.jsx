@@ -15,11 +15,11 @@ import Autoplay from 'embla-carousel-autoplay'
 const servicesItem = [
     {
         image: service1,
-        label: "Sport Massage"
+        label: "Terapi Massage Cedera Olahraga"
     },
     {
         image: service2,
-        label: "Terapi Massage Cedera Olahraga"
+        label: "Sport Massage"
     },
     {
         image: service3,

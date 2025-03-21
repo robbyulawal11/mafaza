@@ -36,8 +36,8 @@ const HomePage = () => {
         <div className="flex-grow">
             <section className="container flex justify-between mt-[84px] mb-[135px]">
                 <div className="">
-                    <h1 className="font-extrabold text-5xl mb-[16px] h-[168px]">Bengkel Therapy Massage<br/>Pijat Cedera Olahraga</h1>
-                    <p className="text-[#062126] opacity-70 font-medium text-[24px] mb-[52px]">Tim profesional kami akan menangani Anda, <br/>kami menghargai waktu dan kesehatan Anda</p>
+                    <h1 className="font-extrabold text-5xl mb-[16px] h-[168px]">Bengkel Therapy Massage<br/>Cedera Olahraga Mafaza</h1>
+                    <p className="text-[#062126] opacity-70 font-medium text-[24px] mb-[52px]">Salam sehat! <br/>Tim profesional kami akan menangani Anda</p>
                     <div className="mb-[52px]">
                         <div className="bg-[#F4F5F4] w-[624px] h-[233px] rounded-[30px] p-[52px] gap-[32px] grid grid-cols-2">
                             <div className="flex">

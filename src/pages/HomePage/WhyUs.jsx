@@ -14,11 +14,6 @@ const whyUsItem = [
         description: "Kami bangga mengumumkan bahwa kami menyediakan anamnesis berkualitas tinggi untuk masalah Anda"
     },
     {
-        icon: icon2,
-        title: "Asuransi",
-        description: "Anda bisa mendapatkan asuransi kami untuk tidak menanggung kesulitan keuangan apa pun di masa mendatang"
-    },
-    {
         icon: icon3,
         title: "Dukungan Terapis Berkualitas",
         description: "Kami memiliki sejumlah besar dukungan terapis berkualitas tinggi"
@@ -37,6 +32,11 @@ const whyUsItem = [
         icon: icon6,
         title: "Latihan Terapi",
         description: "Terapis kami akan membantu Anda mendapatkan rutinitas pelatihan pribadi untuk mendapatkan hasil terbaik"
+    },
+    {
+        icon: icon2,
+        title: "Asuransi",
+        description: "Anda bisa mendapatkan asuransi kami untuk tidak menanggung kesulitan keuangan apa pun di masa mendatang"
     },
 ]
 
