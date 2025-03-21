@@ -42,73 +42,69 @@ const serviceItem =[
 const OurServicesPage = () => {
     return ( 
         <div className="flex-grow">
-            <section className='h-[400px] w-auto flex justify-center items-center bg-center' style={{ backgroundImage:`url(${heroService})` }}>
-                <div className='w-[375px] h-[118px] bg-[#062126] bg-opacity-70 rounded-[30px] flex justify-center items-center'>
-                    <h2 className='text-white font-bold text-[48px]'>Layanan Kami</h2>
+            <section className='flex bg-center h-[400px] justify-center w-auto items-center' style={{ backgroundImage:`url(${heroService})` }}>
+                <div className='flex bg-[#062126] bg-opacity-70 h-[118px] justify-center rounded-[30px] w-[375px] items-center'>
+                    <h2 className='text-[48px] text-white font-bold'>Layanan Kami</h2>
                 </div>
             </section>
-            <section className='container pt-[70px] mb-[68px]'>
-                <div className='grid grid-cols-2 gap-x-auto gap-y-[80px] justify-items-center'>
+            <section className='container mb-[68px] pt-[70px]'>
+                <div className='grid grid-cols-2 justify-items-center gap-x-auto gap-y-[80px]'>
                     {serviceItem.map((item, i) => (
                         <div className='w-[574px]' key={i}>
                             <div>
-                                <img className='w-[574px] h-[332px] mb-[32px]' src={item.image} alt={`service${i}`} />
-                                <h5 className='text-[#062126] font-medium text-[24px] mb-[20px]'>{item.title}</h5>
-                                <p className='text-[#062126] opacity-70 font-regular text-[16px] mb-[55px]'>{item.description}</p>
+                                <img className='h-[332px] w-[574px] mb-[32px]' src={item.image} alt={`service${i}`} />
+                                <h5 className='text-[#062126] text-[24px] font-medium mb-[20px]'>{item.title}</h5>
+                                <p className='text-[#062126] text-[16px] font-regular mb-[55px] opacity-70'>{item.description}</p>
                             </div>
                          </div>
                     ))}
                 </div>
                 <div className='flex justify-center w-full'>
-                    <Card className='max-w-[1240px] h-[200px] bg-[#12CCF4] bg-opacity-5 border-0'>
-                        <CardHeader className='bg-[#24BEE0] rounded-t-[30px] flex flex-row gap-x-[12px] h-[70px] py-[20px] px-[32px]'>
+                    <Card className='bg-[#12CCF4] bg-opacity-5 border-0 h-[200px] max-w-[1240px]'>
+                        <CardHeader className='flex flex-row bg-[#24BEE0] h-[70px] rounded-t-[30px] gap-x-[12px] px-[32px] py-[20px]'>
                             <div>
-                                <img className='w-[30px] h-[30px]' src={calendarWhite} alt="calendarwhiteIcon" />
+                                <img className='h-[30px] w-[30px]' src={calendarWhite} alt="calendarwhiteIcon" />
                             </div>
                             <CardTitle className='text-white'>Waktu yang Tersedia</CardTitle>
                         </CardHeader>
-                    <CardContent className='p-[16px] flex justify-between grid grid-cols-3'>
+                    <CardContent className='grid grid-cols-3 p-[32px]'>
                         <div className='flex gap-[12px]'>
-                            <img className='w-[30px] h-[30px]' src={locationBlue} alt="locationBlue" />
+                            <img className='h-[30px] w-[30px]' src={locationBlue} alt="locationBlue" />
                             <div className='flex flex-col w-full'>
-                                <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Unit 1 - Jl. Veteran 93 Warungboto, Umbulharjo</h5>
+                                <h5 className='text-[#062126] text-[16px] font-semibold opacity-80'>Unit 1 - Jl. Veteran 93 Warungboto, Umbulharjo</h5>
                                 <div className='grid grid-cols-2'>
-                                    <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
+                                    <div className='text-[#062126] text-[14px] font-medium opacity-60'>
                                         <p>Senin - Sabtu</p>
                                     </div>
-                                    <div className='text-[#062126] opacity-80 font-medium text-[14px]'>
+                                    <div className='text-[#062126] text-[14px] font-medium opacity-80'>
                                         <p>09.00 - 21.00</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className='flex gap-[12px]'>
-                            <img className='w-[30px] h-[30px]' src={locationBlue} alt="locationBlue" />
+                            <img className='h-[30px] w-[30px]' src={locationBlue} alt="locationBlue" />
                             <div className='flex flex-col w-full'>
-                                <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Unit 2 - Selatan Masjid Al Jami RT 34 RW 08 Warungboto, Umbulharjo</h5>
+                                <h5 className='text-[#062126] text-[16px] font-semibold opacity-80'>Unit 2 - Selatan Masjid Al Jami RT 34 RW 08 Warungboto, Umbulharjo</h5>
                                 <div className='grid grid-cols-2'>
-                                    <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
-                                        <p>Senin - Sabtu</p>
-                                        <p>Minggu</p>
+                                    <div className='text-[#062126] text-[14px] font-medium opacity-60'>
+                                        <p>Senin - Minggu</p>
                                     </div>
-                                    <div className='text-[#062126] opacity-80 font-medium text-[14px]'>
-                                        <p>09.00 - 21.00</p>
+                                    <div className='text-[#062126] text-[14px] font-medium opacity-80'>
                                         <p>09.00 - 16.30</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className='flex gap-[12px]'>
-                            <img className='w-[30px] h-[30px]' src={locationBlue} alt="locationBlue" />
+                            <img className='h-[30px] w-[30px]' src={locationBlue} alt="locationBlue" />
                             <div className='flex flex-col w-full'>
-                                <h5 className='text-[#062126] opacity-80 font-semibold text-[16px]'>Unit 3 - Utara MAsjid Al Jami RT 34 RW 08 Warungboto, Umbulharjo</h5>
+                                <h5 className='text-[#062126] text-[16px] font-semibold opacity-80'>Unit 3 - Utara MAsjid Al Jami RT 34 RW 08 Warungboto, Umbulharjo</h5>
                                 <div className='grid grid-cols-2'>
-                                    <div className='text-[#062126] opacity-60 font-medium text-[14px]'>
-                                        <p>Senin - Sabtu</p>
-                                        <p>Minggu</p>
+                                    <div className='text-[#062126] text-[14px] font-medium opacity-60'>
+                                        <p>Senin - Minggu</p>
                                     </div>
-                                    <div className='text-[#062126] opacity-80 font-medium text-[14px]'>
-                                        <p>09.00 - 21.00</p>
+                                    <div className='text-[#062126] text-[14px] font-medium opacity-80'>
                                         <p>09.00 - 16.30</p>
                                     </div>
                                 </div>

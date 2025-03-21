@@ -34,22 +34,26 @@ const StatisticMafazaSection = () => {
   const presentaseFeedbackTag = 100 * positiveCount / allTestimony.length;
 
   return (
-    <section className="bg-[#062126] h-[338px] flex items-center">
-      <div className="container flex justify-center items-center gap-[64px]">
-        <div className="flex flex-col justify-center items-center">
-          <p className="text-white font-extrabold text-[64px]">{Math.trunc(presentaseFeedbackTag)}%</p>
-          <p className="text-[#12CCF4] font-medium text-[24px]">Ulasan Positif</p>
-          <p className="text-red-400 font-light text-[16px] text-center">Persentase ini dihitung oleh AI berdasarkan analisis sentimen ulasan</p>
+    <section className="flex bg-[#062126] h-[338px] items-center">
+      <div className="container flex justify-center gap-[64px] items-stretch">
+        <div className="flex flex-1 flex-col justify-center items-center">
+          <p className="text-[64px] text-white font-extrabold">{Math.trunc(presentaseFeedbackTag)}%</p>
+          <p className="text-[#12CCF4] text-[24px] font-medium">Ulasan Positif</p>
+          <p className="text-[16px] text-center text-red-400 font-light">Persentase ini dihitung oleh AI berdasarkan analisis sentimen ulasan</p>
         </div>
-        <hr className="border-[#FFFFFF] border-1 w-[198px] rotate-90" />
-        <div className="flex flex-col justify-center items-center">
-          <p className="text-white font-extrabold text-[64px]">210+</p>
-          <p className="text-[#12CCF4] font-medium text-[24px] text-center">Pasien  Bahagia Setiap Bulan</p>
+        <div className="flex items-center">
+          <hr className="bg-white h-[80%] w-[1px]" />
         </div>
-        <hr className="border-[#FFFFFF] border-1 w-[198px] rotate-90" />
-        <div className="flex flex-col justify-center items-center">
-          <p className="text-white font-extrabold text-[64px]">32</p>
-          <p className="text-[#12CCF4] font-medium text-[24px] text-center">Terapis Profesional</p>
+        <div className="flex flex-1 flex-col items-center">
+          <p className="text-[64px] text-white font-extrabold">210+</p>
+          <p className="text-[#12CCF4] text-[24px] text-center font-medium">Pasien  Bahagia Setiap Bulan</p>
+        </div>
+        <div className="flex items-center">
+          <hr className="bg-white h-[80%] w-[1px]" />
+        </div>
+        <div className="flex flex-1 flex-col items-center">
+          <p className="text-[64px] text-white font-extrabold">32</p>
+          <p className="text-[#12CCF4] text-[24px] text-center font-medium">Terapis Profesional</p>
         </div>
       </div>
     </section>
